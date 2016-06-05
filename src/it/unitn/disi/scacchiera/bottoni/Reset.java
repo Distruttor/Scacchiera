@@ -11,6 +11,10 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 
+/**
+ * Pulsante reset.
+ * @author mirko
+ */
 public class Reset extends Button {
     public Reset()
     {
@@ -18,7 +22,9 @@ public class Reset extends Button {
         setOnAction(resetta);
     }
     
-    
+    /**
+     * Resetta le scacchiere alla condizione iniziale.
+     */
     EventHandler<ActionEvent> resetta = new EventHandler<ActionEvent>()
     {
         @Override

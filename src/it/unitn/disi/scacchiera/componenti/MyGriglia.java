@@ -11,10 +11,13 @@ public class MyGriglia extends TilePane{
     
     boolean sinistra;
     
+    /**
+     * Crea una griglia quadrata contenente diverse celle.
+     * @param sinistra Per indicare se si tratta della griglia
+     * sinistra o di quella destra.
+     */
     public MyGriglia(boolean sinistra)
-    {
-        
-       
+    {     
 //        setPrefWidth(50);
         this.sinistra = sinistra;
         setPrefColumns(Main.N);
@@ -42,6 +45,10 @@ public class MyGriglia extends TilePane{
         
     }
     
+    /**
+     * Informa se si tratta della griglia di sinistra o di destra.
+     * @return String contente informazioni riguardo la posizione della griglia.
+     */
     public String toString()
     {
       String ris = new String();

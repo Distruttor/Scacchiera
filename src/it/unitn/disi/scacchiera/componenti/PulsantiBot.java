@@ -7,6 +7,10 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 
 public class PulsantiBot extends HBox {
+    /**
+     * Raggruppa in un HBox i pulsanti che andranno
+     * nella parte bassa della finestra.
+     */
     public PulsantiBot()
     {
         getChildren().addAll(new Reset(),new Stampa());

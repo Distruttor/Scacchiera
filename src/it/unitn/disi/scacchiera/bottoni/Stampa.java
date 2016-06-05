@@ -12,14 +12,21 @@ import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 
 public class Stampa extends Button {
+    /**
+     * Bottone per stampa.
+     */
     public Stampa()
     {
         setText("STAMPA");
         setOnAction(stampare);
-        setPrefSize(100, 60);
     }
        
-    
+    /**
+     * Evento per stampare su finestra separata
+     * le coordinate delle celle annerite
+     * appartenenti alla scacchiera di 
+     * sinistra.
+     */
     EventHandler<ActionEvent> stampare = new EventHandler<ActionEvent>() {
         String testo = new String();
         
